@@ -5,7 +5,6 @@ from setuptools import setup, find_packages
 
 setup(
     name="ghostswap",
-    py_modules=["AdaptiveWingLoss", "apex", "coordinate_reg", "examples", "insightface_func", "models", "network", "utils"],
     version="1.0",
     description="Ghost swap as API",
     author="Sreerag",
