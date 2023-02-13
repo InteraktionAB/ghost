@@ -9,7 +9,7 @@ setup(
     description="Ghost swap as API",
     author="Sreerag",
     url='https://github.com/InteraktionAB/ghost',
-    packages=find_packages(),
+    packages=['AdaptiveWingLoss', 'apex', 'coordinate_reg', 'examples', 'insightface_func', 'models', 'network', 'utils'],
     install_requires=[
         str(r)
         for r in pkg_resources.parse_requirements(
