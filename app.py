@@ -1,5 +1,6 @@
 from utils.inference.image_processing import crop_face
 from utils.inference.video_processing import read_video, get_target, get_final_video, add_audio_from_another_video
+from utils.inference.core import model_inference
 
 from network.AEI_Net import AEI_Net
 from coordinate_reg.image_infer import Handler
