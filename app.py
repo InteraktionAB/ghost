@@ -47,7 +47,7 @@ def inference(inputs):
     OUT_VIDEO_NAME = "result.mp4"
     crop_size = 224
 
-    source = crop_face(source_full, app, crop_size)
+    source = crop_face(source_full, app, crop_size)[0]
     source = [source[:, :, ::-1]]
 
     full_frames, fps = read_video('video.mp4')
