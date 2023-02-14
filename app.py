@@ -84,5 +84,5 @@ def inference(inputs):
     add_audio_from_another_video('video.mp4', OUT_VIDEO_NAME, "audio")
 
     with open(OUT_VIDEO_NAME, 'rb') as videofile:
-        text = base64.b64encode(videofile.read())
+        text = base64.b64encode(videofile.read()).decode('utf-8')
     return {'output': text}
