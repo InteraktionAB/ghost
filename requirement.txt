@@ -1,0 +1,6 @@
+sanic==22.6.2
+insightface==0.2.1
+onnxruntime-gpu==1.8
+mxnet-cu112
+kornia==0.5.4
+git+https://github.com/InteraktionAB/ghost@de0078cd01c5c8fa70b95dfd1920d9d8502c4296
