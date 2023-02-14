@@ -11,6 +11,7 @@ import base64
 import numpy as np 
 import cv2
 import requests
+import torch
 
 def init():
     global app
