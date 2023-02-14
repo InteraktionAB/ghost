@@ -6,4 +6,4 @@ inputs = {'image' : 'https://img.freepik.com/free-photo/front-view-man-with-nose
 
 res = requests.post('http://localhost:8000/', json = inputs)
 
-out = res.json()["text"]
+out = res.json()["output"]
