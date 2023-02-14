@@ -19,6 +19,7 @@ def init():
     global model
 
     app = Face_detect_crop(name='antelope', root='./insightface_func/models')
+    app.prepare(ctx_id= 0, det_thresh=0.6, det_size=(640,640))
     generation = AEI_Net(backbone='unet', num_blocks=2, c_id=512)
     generation.cuda()
     netArc = iresnet100(fp16=False)
