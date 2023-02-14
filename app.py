@@ -2,7 +2,6 @@ from network.AEI_Net import AEI_Net
 from coordinate_reg.image_infer import Handler
 from insightface_func.face_detect_crop_multi import Face_detect_crop
 from arcface_model.iresnet import iresnet100
-from models.pix2pix_model import Pix2PixModel
 
 import base64
 import numpy as np 
@@ -22,8 +21,7 @@ def init():
     netArc = iresnet100(fp16=False)
     netArc.cuda()
     handler = Handler('./coordinate_reg/model/2d106det', 0, ctx_id=0, det_size=640)
-    model = Pix2PixModel(opt)
-    model.cuda()
+
 
 def inference(inputs):
     global app
