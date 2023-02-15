@@ -1,6 +1,5 @@
 # Must use a Cuda version 11+
-FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
-
+FROM cuda-10.1-cudnn8-runtime-ubuntu18.04
 WORKDIR /
 
 # Install git
