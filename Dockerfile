@@ -33,4 +33,4 @@ RUN python3.8 download.py
 ADD app.py .
 ADD ./ .
 
-CMD python3 -u server.py
+CMD python3.8 -u server.py
