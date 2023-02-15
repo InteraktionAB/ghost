@@ -1,5 +1,8 @@
 # Must use a Cuda version 11+
-FROM pytorch/pytorch:1.11.0-cuda10.1-cudnn8-runtime
+FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
+
+RUN export LD_LIBRARY_PATH=/usr/local/cuda-11.3/lib64:$LD_LIBRARY_PATH
+RUN export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
 WORKDIR /
 
