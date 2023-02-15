@@ -1,5 +1,5 @@
 # Must use a Cuda version 11+
-FROM cuda-10.1-cudnn8-runtime-ubuntu18.04
+FROM 10.1-cudnn8-runtime-ubuntu18.04
 WORKDIR /
 
 # Install git
