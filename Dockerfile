@@ -8,13 +8,14 @@ RUN apt-get update && apt-get install -y git
 
 #install python
 RUN apt-get install -y python3.8
+RUN apt-get install -y python3-pip
 
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 # Install python packages
 RUN python3.8 -m pip install --upgrade pip
 ADD requirements.txt requirements.txt
-RUN python3.8 -m pip3 install -r requirements.txt
+RUN python3.8 -m pip install -r requirements.txt
 
 # We add the banana boilerplate here
 ADD server.py .
