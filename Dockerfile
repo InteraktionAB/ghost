@@ -2,7 +2,8 @@
 FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
 
 RUN export LD_LIBRARY_PATH=/usr/local/cuda-11.3/lib64:$LD_LIBRARY_PATH
-RUN export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+#RUN export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+RUN export CUDA_HOME=/usr/local/cuda-11.3
 
 WORKDIR /
 
