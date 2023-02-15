@@ -3,8 +3,6 @@ FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
 
 WORKDIR /
 
-RUN apt-get remove python3
-
 # Install git
 RUN apt-get update && apt-get install -y git
 
