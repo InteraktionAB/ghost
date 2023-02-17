@@ -1,0 +1,22 @@
+build:
+  gpu: true
+  python_version: "3.8"
+  python_packages:
+    - numpy
+    - -f https://download.pytorch.org/whl/torch_stable.html torch==1.6.0+cu101
+    - -f https://download.pytorch.org/whl/torch_stable.html torchvision==0.7.0+cu101
+    - opencv-python
+    - onnx==1.9.0
+    - onnxruntime-gpu==1.14.0
+    - mxnet-cu112
+    - scikit-image
+    - insightface==0.2.1
+    - requests==2.25.1
+    - kornia==0.5.4
+    - dill
+    - wandb
+    - sanic==22.6.2
+    - setuptools==67.2.0
+    - urllib3==1.26.11
+image: "r8.im/poseidonericssion/ghost"
+predict: "predict.py:Predictor"
