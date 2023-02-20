@@ -1,14 +1,14 @@
 build:
-  cuda: "11.2"
+  cuda: "10.1"
   gpu: true
   python_version: "3.8"
   python_packages:
-    - torch==1.6.0
-    - torchvision==0.7.0
+    - torch==1.6.0+cu101
+    - torchvision==0.7.0+cu101
     - opencv-python
-    - onnx
-    - onnxruntime-gpu
-    - mxnet-cu112
+    - onnx==1.9.0
+    - onnxruntime-gpu==1.4.0
+    - mxnet-cu101mkl
     - scikit-image
     - insightface==0.2.1
     - requests==2.25.1
