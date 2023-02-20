@@ -3,7 +3,6 @@ build:
   gpu: true
   python_version: "3.8"
   python_packages:
-    - numpy==1.19.5
     - torch==1.6.0
     - torchvision==0.7.0
     - opencv-python
