@@ -1,5 +1,6 @@
 build:
   cuda: "10.1"
+  cudnn: "7"
   gpu: true
   python_version: "3.8"
   python_packages:
