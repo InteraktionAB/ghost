@@ -6,7 +6,7 @@ build:
     - torch==1.6.0
     - torchvision==0.7.0
     - opencv-python
-    - onnx==1.13.0
+    - onnx
     - onnxruntime-gpu
     - mxnet-cu112
     - scikit-image
