@@ -18,5 +18,7 @@ build:
     - sanic==22.6.2
     - setuptools==67.2.0
     - urllib3==1.26.11
+  system_packages:
+    - "libgl1"
 image: "r8.im/poseidonericssion/ghost"
 predict: "predict.py:Predictor"
