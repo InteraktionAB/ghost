@@ -4,8 +4,8 @@ build:
   python_version: "3.8"
   python_packages:
     - numpy
-    - -f https://download.pytorch.org/whl/torch_stable.html torch==1.6.0+cu101
-    - -f https://download.pytorch.org/whl/torch_stable.html torchvision==0.7.0+cu101
+    - torch==1.6.0
+    - torchvision==0.7.0
     - opencv-python
     - onnx==1.13.0
     - onnxruntime-gpu==1.14.0
