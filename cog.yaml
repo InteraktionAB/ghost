@@ -20,5 +20,6 @@ build:
     - urllib3==1.26.11
   system_packages:
     - "libgl1"
+    - "libcudnn7"
 image: "r8.im/poseidonericssion/ghost"
 predict: "predict.py:Predictor"
