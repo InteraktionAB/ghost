@@ -1,6 +1,5 @@
 build:
   cuda: "10.1"
-  cudnn: "7"
   gpu: true
   python_version: "3.8"
   python_packages:
@@ -9,7 +8,7 @@ build:
     - -f https://download.pytorch.org/whl/torch_stable.html torchvision==0.7.0+cu101
     - opencv-python
     - onnx==1.9.0
-    - onnxruntime-gpu==1.4.0
+    - onnxruntime-gpu==1.14.0
     - mxnet-cu112
     - scikit-image
     - insightface==0.2.1
