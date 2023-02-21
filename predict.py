@@ -1,4 +1,5 @@
 from cog import BasePredictor, Path, Input
+import tempfile
 
 from utils.inference.image_processing import crop_face
 from utils.inference.video_processing import read_video, get_target, get_final_video, add_audio_from_another_video
