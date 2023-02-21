@@ -73,5 +73,5 @@ class Predictor(BasePredictor):
 
     #with open(OUT_VIDEO_NAME, 'rb') as videofile:
         #text = base64.b64encode(videofile.read()).decode('utf-8')
-    return OUT_VIDEO_NAME
+    return Path(OUT_VIDEO_NAME)
                    
