@@ -11,6 +11,7 @@ build:
     - insightface==0.2.1
     - kornia==0.5.4
   system_packages:
+    - "ffmpeg"
     - "libgl1"
 image: "r8.im/poseidonericssion/ghost"
 predict: "predict.py:Predictor"
