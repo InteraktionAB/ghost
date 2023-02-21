@@ -39,14 +39,14 @@ class Predictor(BasePredictor):
   ) -> Path:
     
        
-    source_full = cv2.imread('img.png')
+    source_full = cv2.imread(image)
     OUT_VIDEO_NAME = "result.mp4"
     crop_size = 224
 
     source = crop_face(source_full, self.app, crop_size)[0]
     source = [source[:, :, ::-1]]
 
-    full_frames, fps = read_video('video.mp4')
+    full_frames, fps = read_video(video)
     target = get_target(full_frames, self.app, crop_size)
 
     batch_size = 40
