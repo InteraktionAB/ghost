@@ -69,7 +69,7 @@ class Predictor(BasePredictor):
                     fps,
                     self.handler)
     
-    add_audio_from_another_video(source_video, OUT_VIDEO_NAME, "audio")
+    #add_audio_from_another_video(source_video, OUT_VIDEO_NAME, "audio")
 
     #with open(OUT_VIDEO_NAME, 'rb') as videofile:
         #text = base64.b64encode(videofile.read()).decode('utf-8')
