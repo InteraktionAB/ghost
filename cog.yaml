@@ -3,6 +3,7 @@ build:
   gpu: true
   python_version: "3.8"
   python_packages:
+    - numpy==1.21.6
     - -f https://download.pytorch.org/whl/torch_stable.html torch==1.13.1+cu116
     - torchvision==0.14.1+cu116
     - onnxruntime-gpu==1.8
