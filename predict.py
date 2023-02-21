@@ -39,13 +39,14 @@ class Predictor(BasePredictor):
   ) -> Path:
     
     print("type of image ",type(image))
-    source_full = cv2.imread(image)
+    source_image = str(image)
+    source_full = cv2.imread(source_image)
     OUT_VIDEO_NAME = "result.mp4"
     crop_size = 224
 
     source = crop_face(source_full, self.app, crop_size)[0]
     source = [source[:, :, ::-1]]
-
+    
     full_frames, fps = read_video(video)
     target = get_target(full_frames, self.app, crop_size)
 
