@@ -4,7 +4,7 @@ build:
   python_version: "3.8"
   python_packages:
     - -f https://download.pytorch.org/whl/torch_stable.html torch==1.13.1+cu116
-    - -f https://download.pytorch.org/whl/torch_stable.html torchvision==0.14.1+cu116
+    - torchvision==0.14.1+cu116
     - onnxruntime-gpu==1.8
     - mxnet-cu112
     - insightface==0.2.1
