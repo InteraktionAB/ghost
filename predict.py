@@ -38,7 +38,7 @@ class Predictor(BasePredictor):
               video: Path = Input(description = "video path") 
   ) -> Path:
     
-       
+    print("type of image ",type(image))
     source_full = cv2.imread(image)
     OUT_VIDEO_NAME = "result.mp4"
     crop_size = 224
