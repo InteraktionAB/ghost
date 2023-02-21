@@ -34,9 +34,9 @@ class Predictor(BasePredictor):
     self.handler = Handler('./coordinate_reg/model/2d106det', 0, ctx_id=0, det_size=640)
     
   def predict(self,
-              image: str = Input(description = "base64 image"),
-              video: str = Input(description = "base64 video") 
-  ) -> str:
+              image: Path = Input(description = "image path"),
+              video: Path = Input(description = "video path") 
+  ) -> Path:
     
     with open('img.png', 'wb') as f:
         f.write(requests.get(image).content)
