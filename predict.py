@@ -23,8 +23,8 @@ class Predictor(BasePredictor):
     self.generation = AEI_Net(backbone='unet', num_blocks=2, c_id=512)
     self.generation.eval()
     self.generation.load_state_dict(torch.load('weights/G_unet_2blocks.pth', map_location=torch.device('cpu')))
-    self.generation = self.generation.half()
     self.generation = self.generation.cuda()
+    self.generation = self.generation.half()
     
     self.netArc = iresnet100(fp16=False)
     self.netArc.load_state_dict(torch.load('arcface_model/backbone.pth'))
