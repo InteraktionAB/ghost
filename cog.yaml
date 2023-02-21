@@ -1,21 +1,14 @@
 build:
+  cuda: "11.2"
   gpu: true
   python_version: "3.8"
   python_packages:
-    - -f https://download.pytorch.org/whl/torch_stable.html torch==1.6.0+cu101
-    - -f https://download.pytorch.org/whl/torch_stable.html torchvision==0.7.0+cu101
-    - opencv-python
-    - onnxruntime-gpu==1.8.0
-    - mxnet-cu101mkl
-    - scikit-image
+    - -f https://download.pytorch.org/whl/torch_stable.html torch==1.13.1+cu116
+    - -f https://download.pytorch.org/whl/torch_stable.html torchvision==0.14.1+cu116
+    - onnxruntime-gpu==1.8
+    - mxnet-cu112
     - insightface==0.2.1
-    - requests==2.25.1
     - kornia==0.5.4
-    - dill
-    - wandb
-    - sanic==22.6.2
-    - setuptools==67.2.0
-    - urllib3==1.26.11
   system_packages:
     - "libgl1"
 image: "r8.im/poseidonericssion/ghost"
