@@ -37,9 +37,7 @@ class Predictor(BasePredictor):
               image: str = Input(description = "base64 image"),
               video: str = Input(description = "base64 video") 
   ) -> str:
-    image = inputs['image']
-    video = inputs['video']
-
+    
     with open('img.png', 'wb') as f:
         f.write(requests.get(image).content)
 
