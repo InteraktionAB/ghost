@@ -47,7 +47,8 @@ class Predictor(BasePredictor):
     source = crop_face(source_full, self.app, crop_size)[0]
     source = [source[:, :, ::-1]]
     
-    full_frames, fps = read_video(video)
+    source_video = str(video)
+    full_frames, fps = read_video(source_video)
     target = get_target(full_frames, self.app, crop_size)
 
     batch_size = 40
@@ -68,7 +69,7 @@ class Predictor(BasePredictor):
                     fps,
                     self.handler)
     
-    add_audio_from_another_video('video.mp4', OUT_VIDEO_NAME, "audio")
+    add_audio_from_another_video(source_video, OUT_VIDEO_NAME, "audio")
 
     with open(OUT_VIDEO_NAME, 'rb') as videofile:
         text = base64.b64encode(videofile.read()).decode('utf-8')
