@@ -38,12 +38,7 @@ class Predictor(BasePredictor):
               video: Path = Input(description = "video path") 
   ) -> Path:
     
-    with open('img.png', 'wb') as f:
-        f.write(requests.get(image).content)
-
-    with open('video.mp4', 'wb') as i:
-        i.write(requests.get(video).content)
-    
+       
     source_full = cv2.imread('img.png')
     OUT_VIDEO_NAME = "result.mp4"
     crop_size = 224
