@@ -42,7 +42,7 @@ class Predictor(BasePredictor):
     source_image = str(image)
     source_full = cv2.imread(source_image)
     print("type of image ",type(source_image))
-    OUT_VIDEO_NAME = Path(tempfile.mkdtemp()) / "result.mp4"
+    OUT_VIDEO_NAME = "result.mp4" #Path(tempfile.mkdtemp()) / "result.mp4"
     crop_size = 224
 
     source = crop_face(source_full, self.app, crop_size)[0]
